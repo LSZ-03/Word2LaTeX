@@ -1,0 +1,17 @@
+slug: nas
+display_name: NAS Family
+status: checklist-required
+documentclass: article
+section_numbering: arabic
+section_depth: 3
+bibliography_style: mode
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: nas
+official_source: https://www.pnas.org/author-center/new-author-guide
+

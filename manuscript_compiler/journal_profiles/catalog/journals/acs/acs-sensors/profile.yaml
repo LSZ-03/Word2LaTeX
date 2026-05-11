@@ -1,0 +1,37 @@
+slug: acs-sensors
+display_name: ACS Sensors
+family: acs
+status: verified
+section_depth: 0
+journal_header: ACS Sensors
+official_source: https://pubs.acs.org/page/4authors/submission/tex.html
+template_package_url: https://mirrors.ctan.org/macros/latex/contrib/achemso.zip
+checks:
+- id: class-file-and-submission-mode
+  title: Class file and submission mode
+  requirement: Confirm the manuscript uses the official ACS achemso class and the correct submission mode for the target journal.
+  status: checklist-required
+- id: frontmatter-and-chemistry-metadata
+  title: Front matter and chemistry metadata
+  requirement: Confirm title, author affiliations, abstract, graphical elements, and any chemistry-specific metadata follow
+    the ACS authoring guidance.
+  status: checklist-required
+- id: section-flow-and-article-type
+  title: Section flow and article type
+  requirement: Confirm the manuscript section hierarchy and article type match the target ACS journal expectations.
+  status: checklist-required
+- id: graphics-and-supporting-information
+  title: Graphics and supporting information
+  requirement: Confirm figure handling, TOC graphics, and supporting information preparation follow ACS guidance.
+  status: checklist-required
+- id: bibliography-and-chemistry-style
+  title: Bibliography and chemistry style
+  requirement: Confirm the bibliography workflow and chemistry style conventions remain consistent with the ACS authoring
+    guidance.
+  status: checklist-required
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Verify ACS Sensors-specific graphical elements, abstract style, and bibliography tooling before calling the
+    layout submission-ready.
+  status: checklist-required
+

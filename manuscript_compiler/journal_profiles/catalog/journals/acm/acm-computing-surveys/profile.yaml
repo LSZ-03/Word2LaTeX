@@ -1,0 +1,38 @@
+slug: acm-computing-surveys
+display_name: ACM Computing Surveys
+family: acm
+status: verified
+section_depth: 0
+journal_header: ACM Computing Surveys
+official_source: https://www.acm.org/publications/authors/submissions-top
+template_package_url: https://mirrors.ctan.org/macros/latex/contrib/acmart.zip
+checks:
+- id: class-file-and-submission-mode
+  title: Class file and submission mode
+  requirement: Confirm the manuscript uses the official ACM acmart class and the review-oriented submission mode required
+    by ACM.
+  status: checklist-required
+- id: frontmatter-and-acm-metadata
+  title: Front matter and ACM metadata
+  requirement: Confirm title, abstract, CCS concepts, keywords, authors, affiliations, and ACM-specific metadata match the
+    official authoring guidance.
+  status: checklist-required
+- id: section-flow-and-length
+  title: Section flow and manuscript length
+  requirement: Confirm the section hierarchy and overall manuscript length match the target ACM journal's expectations.
+  status: checklist-required
+- id: figure-table-and-accessibility-rules
+  title: Figure, table, and accessibility rules
+  requirement: Confirm figure and table treatment, caption style, and accessibility requirements such as figure descriptions
+    follow ACM guidance.
+  status: checklist-required
+- id: references-and-bibliography-mode
+  title: References and bibliography mode
+  requirement: Confirm the citation and bibliography mode matches the official ACM journal workflow and the target venue requirements.
+  status: checklist-required
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Verify survey-paper expectations, section depth, and any ACM Computing Surveys-specific editorial guidance
+    before calling the layout submission-ready.
+  status: checklist-required
+

@@ -1,0 +1,18 @@
+slug: sage
+display_name: SAGE Family
+status: checklist-required
+documentclass: article
+section_numbering: arabic
+section_depth: 3
+bibliography_style: mode
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: sage
+official_source: https://journals.sagepub.com/author-instructions
+template_package_url: https://uk.sagepub.com/sites/default/files/sage_latex_template_4.zip
+

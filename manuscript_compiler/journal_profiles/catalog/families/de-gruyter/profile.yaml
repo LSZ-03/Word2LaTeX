@@ -1,0 +1,17 @@
+slug: de-gruyter
+display_name: De Gruyter Family
+status: checklist-required
+documentclass: article
+section_numbering: arabic
+section_depth: 3
+bibliography_style: settings
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: de-gruyter
+official_source: https://www.degruyter.com/publishing/for-authors/manuscript-preparation
+

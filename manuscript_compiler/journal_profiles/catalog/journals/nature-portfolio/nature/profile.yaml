@@ -1,0 +1,38 @@
+slug: nature
+display_name: Nature
+family: nature-portfolio
+status: verified
+section_depth: 0
+journal_header: Nature
+official_source: https://www.nature.com/nature-portfolio/for-authors/formatting-guide
+template_package_url: https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12
+checks:
+- id: class-file-and-style-option
+  title: Class file and style option
+  requirement: Confirm the manuscript uses the imported official sn-jnl package with the style option most consistent with
+    the target family or journal guidance.
+  status: checklist-required
+- id: frontmatter-and-journal-metadata
+  title: Front matter and journal metadata
+  requirement: Confirm title, authors, affiliations, abstract, keywords, and any journal-specific metadata follow the Springer
+    Nature author guidance.
+  status: checklist-required
+- id: section-flow-and-family-rules
+  title: Section flow and family rules
+  requirement: Confirm the article structure and any family-specific reporting expectations match the target journal guidance.
+  status: checklist-required
+- id: figure-table-and-supplementary-rules
+  title: Figure, table, and supplementary rules
+  requirement: Confirm artwork, table treatment, and supplementary file handling remain consistent with the official Springer
+    Nature guidance.
+  status: checklist-required
+- id: references-and-bibliography-style
+  title: References and bibliography style
+  requirement: Confirm the selected bibliography style option matches the target family or journal guidance.
+  status: checklist-required
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Verify Nature-specific editorial expectations, figure density, and any live journal metadata before calling
+    the layout submission-ready.
+  status: checklist-required
+

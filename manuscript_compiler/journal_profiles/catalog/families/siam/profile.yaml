@@ -1,0 +1,46 @@
+slug: siam
+display_name: SIAM Family
+status: verified
+documentclass: article
+section_numbering: arabic
+section_depth: 3
+bibliography_style: mode
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: siam
+official_source: https://www.siam.org/publications/journals/authors/
+template_package_url: https://tug.ctan.org/macros/latex/contrib/siam/siamltex.zip
+checks:
+- id: class-file-and-title-scope
+  title: Class file and title scope
+  requirement: Confirm the manuscript uses the SIAM package and that the target title still accepts the family baseline.
+  status: verified
+- id: frontmatter-and-math-metadata
+  title: Front matter and math metadata
+  requirement: Confirm title, authors, affiliations, abstract, keywords, AMS subject classifications, and running heads follow
+    the target SIAM title guidance.
+  status: verified
+- id: section-flow-and-theorem-rules
+  title: Section flow and theorem rules
+  requirement: Confirm theorem environments, section hierarchy, and appendix handling match the target SIAM journal expectations.
+  status: verified
+- id: figure-table-and-proof-style
+  title: Figure, table, and proof style
+  requirement: Confirm table treatment, figure captions, proof formatting, and equation presentation follow the target SIAM
+    style.
+  status: verified
+- id: references-and-bibliography-style
+  title: References and bibliography style
+  requirement: Confirm the target SIAM journal still uses the family bibliography workflow represented by the local package.
+  status: verified
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Use this family baseline only when the exact SIAM target journal has not yet been fixed; once the venue is
+    known, tighten the manuscript against that title's live guidance.
+  status: verified
+

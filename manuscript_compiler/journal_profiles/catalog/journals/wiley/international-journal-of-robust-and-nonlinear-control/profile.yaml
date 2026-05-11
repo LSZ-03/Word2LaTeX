@@ -1,0 +1,37 @@
+slug: international-journal-of-robust-and-nonlinear-control
+display_name: International Journal of Robust and Nonlinear Control
+family: wiley
+status: verified
+section_depth: 0
+journal_header: International Journal of Robust and Nonlinear Control
+official_source: https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html
+template_package_url: https://authors.wiley.com/asset/WileyDesign.zip
+checks:
+- id: class-file-and-template-mode
+  title: Class file and template mode
+  requirement: Confirm the manuscript uses the imported official Wiley USG class and the selected template mode consistent
+    with the Wiley PDF design package.
+  status: checklist-required
+- id: frontmatter-and-wiley-metadata
+  title: Front matter and Wiley metadata
+  requirement: Confirm title, authors, correspondence, abstract, keywords, and publisher metadata follow the Wiley authoring
+    guidance.
+  status: checklist-required
+- id: section-flow-and-journal-rules
+  title: Section flow and journal rules
+  requirement: Confirm the manuscript section hierarchy and journal-level expectations match the target Wiley guide.
+  status: checklist-required
+- id: figure-table-and-graphics-rules
+  title: Figure, table, and graphics rules
+  requirement: Confirm figure handling, table style, and graphics preparation remain consistent with the Wiley authoring package
+    and the target journal guidance.
+  status: checklist-required
+- id: references-and-bibliography-style
+  title: References and bibliography style
+  requirement: Confirm the selected Wiley bibliography mode matches the target journal guidance.
+  status: checklist-required
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Verify theorem environments, bibliography mode, and author note structure before calling the layout submission-ready.
+  status: checklist-required
+

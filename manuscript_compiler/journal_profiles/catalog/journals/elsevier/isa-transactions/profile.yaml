@@ -1,0 +1,40 @@
+slug: isa-transactions
+display_name: ISA Transactions
+family: elsevier
+status: verified
+section_depth: 0
+journal_header: ISA Transactions
+official_source: https://www.sciencedirect.com/journal/isa-transactions/publish/guide-for-authors
+template_package_url: https://assets.ctfassets.net/o78em1y1w4i4/4MpsJHO0MOJ2xZuwGTAbOZ/7bc64af36477c5d6cfce335a1f872363/elsarticle.zip
+checks:
+- id: class-file-and-template-variant
+  title: Class file and template variant
+  requirement: Confirm the journal follows the imported official Elsevier elsarticle package and that the selected sample
+    manuscript variant matches the guide for authors.
+  status: checklist-required
+- id: frontmatter-and-keywords
+  title: Frontmatter and keywords
+  requirement: Confirm title page, author affiliations, abstract, keyword count, and any journal-specific metadata required
+    by the guide for authors.
+  status: checklist-required
+- id: reference-style-alignment
+  title: Reference style alignment
+  requirement: Confirm whether the journal guide expects numeric or author-year citations and keep the selected Elsevier template
+    variant consistent with that guidance.
+  status: checklist-required
+- id: highlights-and-declarations
+  title: Highlights and declarations
+  requirement: Confirm whether highlights, graphical abstract, declaration sections, data statements, or biographies are required,
+    optional, or disallowed.
+  status: checklist-required
+- id: figure-table-and-submission-assets
+  title: Figure, table, and submission assets
+  requirement: Confirm artwork format, table handling, supplementary files, and any guide-specific upload constraints for
+    source submission.
+  status: checklist-required
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Verify frontmatter fields, declarations, and any industrial-application formatting notes against the live guide
+    for authors.
+  status: checklist-required
+

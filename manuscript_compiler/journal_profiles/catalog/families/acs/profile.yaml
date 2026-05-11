@@ -1,0 +1,46 @@
+slug: acs
+display_name: ACS Family
+status: verified
+documentclass: article
+section_numbering: arabic
+section_depth: 3
+bibliography_style: tooling
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: acs
+official_source: https://pubs.acs.org/page/4authors/submission/tex.html
+template_package_url: https://mirrors.ctan.org/macros/latex/contrib/achemso.zip
+checks:
+- id: class-file-and-submission-mode
+  title: Class file and submission mode
+  requirement: Confirm the manuscript uses the official ACS achemso class and the correct submission mode for the target journal.
+  status: verified
+- id: frontmatter-and-chemistry-metadata
+  title: Front matter and chemistry metadata
+  requirement: Confirm title, author affiliations, abstract, graphical elements, and any chemistry-specific metadata follow
+    the ACS authoring guidance.
+  status: verified
+- id: section-flow-and-article-type
+  title: Section flow and article type
+  requirement: Confirm the manuscript section hierarchy and article type match the target ACS journal expectations.
+  status: verified
+- id: graphics-and-supporting-information
+  title: Graphics and supporting information
+  requirement: Confirm figure handling, TOC graphics, and supporting information preparation follow ACS guidance.
+  status: verified
+- id: bibliography-and-chemistry-style
+  title: Bibliography and chemistry style
+  requirement: Confirm the bibliography workflow and chemistry style conventions remain consistent with the ACS authoring
+    guidance.
+  status: verified
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Use this family baseline only when the exact ACS target journal has not yet been fixed; once the venue is known,
+    tighten the manuscript against that journal's live ACS guidance.
+  status: verified
+

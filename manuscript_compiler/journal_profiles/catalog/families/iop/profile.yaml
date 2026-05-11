@@ -1,0 +1,47 @@
+slug: iop
+display_name: IOP Family
+status: verified
+documentclass: article
+section_numbering: arabic
+section_depth: 3
+bibliography_style: integration
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: iop
+official_source: https://publishingsupport.iopscience.iop.org/questions/latex-template/
+template_package_url: https://publishingsupport.iopscience.iop.org/wp-content/uploads/2025/07/ioplatextemplate.zip
+checks:
+- id: class-file-and-submission-path
+  title: Class file and submission path
+  requirement: Confirm the target IOP title accepts the family template path and whether the manuscript should be submitted
+    in the template class or as a generic LaTeX source.
+  status: verified
+- id: frontmatter-and-article-type
+  title: Front matter and article type
+  requirement: Confirm article type, authors, affiliations, correspondence, abstract, and keywords follow the target IOP journal
+    guidance.
+  status: verified
+- id: section-flow-and-end-section-rules
+  title: Section flow and end section rules
+  requirement: Confirm section hierarchy, acknowledgments, funding, author roles, data statements, and supplementary data
+    sections match the target title.
+  status: verified
+- id: figure-table-and-accessibility-rules
+  title: Figure, table, and accessibility rules
+  requirement: Confirm artwork handling, caption expectations, and accessibility recommendations follow the current IOP guidance.
+  status: verified
+- id: references-and-bibliography-style
+  title: References and bibliography style
+  requirement: Confirm the target IOP journal's bibliography workflow and reference formatting expectations.
+  status: verified
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Use this family baseline only when the exact IOP target journal has not yet been fixed; once the venue is known,
+    tighten the manuscript against that title's live guidance.
+  status: verified
+

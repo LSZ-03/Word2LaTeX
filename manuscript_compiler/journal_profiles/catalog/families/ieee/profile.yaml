@@ -1,0 +1,158 @@
+slug: ieee
+display_name: IEEE Family
+status: verified
+documentclass: IEEEtran
+class_options:
+- journal
+packages:
+- cite
+- graphicx
+- amsmath
+- amssymb
+- url
+- hyperref
+- booktabs
+- caption
+- subcaption
+- array
+- algorithmic
+package_options:
+  cite: numbers,sort&compress
+  hyperref: colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black
+preamble_extra:
+- \ifCLASSINFOpdf
+- '  \DeclareGraphicsExtensions{.pdf,.png,.jpg}'
+- \else
+- '  \DeclareGraphicsExtensions{.eps}'
+- \fi
+bibliography_style: IEEEtran
+bibliography_type: thebibliography
+figure_max_width: 0.45\textwidth
+figure_placement: '!t'
+table_placement: '!t'
+template_dir: ieee
+official_source: https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/
+template_package_url: https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip
+house_style:
+  section_order:
+  - Introduction
+  - Related Work
+  - Methodology
+  - Experiments
+  - Conclusion and Discussion
+  - References
+  float_spacing:
+    textfloatsep: 7pt plus 1pt minus 2pt
+    floatsep: 6pt plus 1pt minus 2pt
+    intextsep: 6pt plus 1pt minus 2pt
+    dbltextfloatsep: 7pt plus 1pt minus 2pt
+    abovecaptionskip: 3pt plus 1pt minus 1pt
+    belowcaptionskip: 0pt
+  fonts:
+  - newtxtext
+  - newtxmath
+  front_matter:
+  - \title{...}
+  - \author{...}
+  - \thanks{...}
+  - \markboth{...}
+  - \maketitle
+  - \begin{abstract}...\end{abstract}
+  - \begin{IEEEkeywords}...\end{IEEEkeywords}
+validation_rules:
+  automated:
+  - id: documentclass
+    description: 文档类必须是 IEEEtran [journal]
+    pattern: \\documentclass\[journal\]{IEEEtran}
+    severity: error
+  - id: cite-package
+    description: 必须加载 cite 包 (numbers,sort&compress)
+    pattern: \\usepackage\[numbers,sort&compress\]{cite}
+    severity: error
+  - id: graphics-extensions
+    description: 必须声明支持的图片扩展名
+    pattern: \\DeclareGraphicsExtensions
+    severity: error
+  - id: figure-placement
+    description: 图片环境必须使用 [!t] 放置
+    pattern: \\begin{figure}\[!t\]
+    severity: warning
+  - id: table-placement
+    description: 表格环境必须使用 [!t] 放置
+    pattern: \\begin{table}\[!t\]
+    severity: warning
+  - id: figure-crossref
+    description: 正文中必须使用 Fig.~\ref{fig:N} 引用图片
+    pattern: 'Fig\.~\\ref\{fig:'
+    severity: warning
+  - id: table-crossref
+    description: 正文中必须使用 Table~\ref{tab:N} 引用表格
+    pattern: 'Table~\\ref\{tab:'
+    severity: warning
+  - id: no-hardcoded-fignum
+    description: 不允许硬编码图片编号（如 'Figure 3', 'Fig. 4'）
+    pattern: (?<!~\\ref\{fig:)\b(?:Figure|Fig\.?)\s+\d+
+    severity: error
+    negate: true
+  - id: no-hardcoded-tabnum
+    description: 不允许硬编码表格编号（如 'Table 1', 'Tab. 1'）
+    pattern: (?<!~\\ref\{tab:)\b(?:Table|Tab\.?)\s+\d+
+    severity: error
+    negate: true
+  - id: bibliography-style
+    description: 参考文献必须使用 IEEEtran 样式
+    pattern: \\bibliographystyle{IEEEtran}
+    severity: error
+  - id: bibliography-cmd
+    description: 必须使用 \bibliography{refs} 而非 thebibliography
+    pattern: \\bibliography\{refs\}
+    severity: error
+  - id: hyperref-package
+    description: 必须加载 hyperref 包实现可点击链接
+    pattern: \\usepackage.*hyperref
+    severity: warning
+  - id: abstract-env
+    description: 必须有 abstract 环境
+    pattern: \\begin\{abstract\}
+    severity: error
+  - id: maketitle
+    description: 必须有 maketitle 命令
+    pattern: \\maketitle
+    severity: error
+  - id: section-structure
+    description: 必须有 Introduction 部分
+    pattern: \\section\{.*Introduction.*\}
+    severity: warning
+manual_checks:
+- id: front-matter-structure
+  title: 前页结构
+  items:
+  - 确认 abstract 和 Index Terms 格式是否正确
+  - 确认作者元数据（姓名、单位、通信作者标注）
+  - 确认脚注内容（基金、版权等）
+- id: body-structure
+  title: 正文结构
+  items:
+  - 确认 Related Work 是否应合并到 Introduction
+  - 确认数据集/实验部分命名是否与期刊要求一致
+  - 确认结论是否包含 Discussion
+- id: figure-table-detailed
+  title: 图/表细节规则
+  items:
+  - 确认图题位置（IEEE 标准：图题在下）
+  - 确认表题位置（IEEE 标准：表题在上）
+  - 确认单栏/双栏图片尺寸选择
+  - 确认图片格式（PDF/PNG/JPG）满足期刊要求
+  - 确认补充材料处理方式
+- id: references-end-matter
+  title: 参考文献与末尾
+  items:
+  - 确认引文格式为 IEEE 数字编号
+  - 确认致谢（如有）
+  - 确认附录（如有）
+  - 确认是否需要作者简介（biography）
+caption_policy:
+  figure_position: below
+  table_position: above
+float_policy:
+  strategy: near_reference

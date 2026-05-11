@@ -1,0 +1,43 @@
+slug: frontiers
+display_name: Frontiers Family
+status: verified
+documentclass: article
+section_numbering: arabic
+section_depth: 3
+bibliography_style: format
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: frontiers
+official_source: https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip
+template_package_url: https://www.frontiersin.org/design/zip/Frontiers_LaTeX_Templates.zip
+checks:
+- id: class-file-and-reference-mode
+  title: Class file and reference mode
+  requirement: Confirm the target Frontiers title uses the family class path and the appropriate bibliography mode.
+  status: verified
+- id: frontmatter-and-specialty-metadata
+  title: Front matter and specialty metadata
+  requirement: Confirm title, authors, affiliations, correspondence, specialty labels, abstract, and keywords follow the target
+    Frontiers title.
+  status: verified
+- id: section-flow-and-open-science-rules
+  title: Section flow and open science rules
+  requirement: Confirm section hierarchy and all required open-science reporting sections such as data availability, author
+    contributions, conflict of interest, and funding.
+  status: verified
+- id: figure-table-and-manuscript-rules
+  title: Figure, table, and manuscript rules
+  requirement: Confirm figure handling, caption treatment, and manuscript-style layout expectations follow the target Frontiers
+    title.
+  status: verified
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Use this family baseline only when the exact Frontiers target journal has not yet been fixed; once the venue
+    is known, tighten the manuscript against that title's live guidance.
+  status: verified
+

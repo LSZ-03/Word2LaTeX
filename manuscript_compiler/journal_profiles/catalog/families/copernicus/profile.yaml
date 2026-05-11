@@ -1,0 +1,48 @@
+slug: copernicus
+display_name: Copernicus Family
+status: verified
+documentclass: article
+section_numbering: arabic
+section_depth: 3
+bibliography_style: mode
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: copernicus
+official_source: https://publications.copernicus.org/for_authors/manuscript_preparation.html
+template_package_url: https://publications.copernicus.org/Copernicus_LaTeX_Package.zip
+checks:
+- id: class-file-and-journal-abbreviation
+  title: Class file and journal abbreviation
+  requirement: Confirm the manuscript uses the official Copernicus class and the correct journal abbreviation for the target
+    title.
+  status: verified
+- id: frontmatter-and-geoscience-metadata
+  title: Front matter and geoscience metadata
+  requirement: Confirm title, authors, affiliations, abstract, running title, and discussion-paper metadata follow the target
+    Copernicus journal guidance.
+  status: verified
+- id: section-flow-and-open-review-rules
+  title: Section flow and open-review rules
+  requirement: Confirm the manuscript structure, appendix handling, and any open-review or discussion-paper workflow requirements
+    match the target journal.
+  status: verified
+- id: figure-table-and-declaration-rules
+  title: Figure, table, and declaration rules
+  requirement: Confirm artwork, table treatment, author contributions, competing interests, and acknowledgments follow the
+    target journal guidance.
+  status: verified
+- id: references-and-bibliography-style
+  title: References and bibliography style
+  requirement: Confirm whether the target journal expects BibTeX with the Copernicus style or manual bibliography handling.
+  status: verified
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Use this family baseline only when the exact Copernicus target journal has not yet been fixed; once the venue
+    is known, tighten the manuscript against that journal's live guidance.
+  status: verified
+

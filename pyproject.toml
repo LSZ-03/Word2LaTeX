@@ -1,0 +1,13 @@
+[project]
+name = "word2paperai"
+version = "0.1.0"
+description = "Word Manuscript to LaTeX Compiler"
+requires-python = ">=3.10"
+dependencies = [
+    "python-docx",
+    "jinja2",
+    "pyyaml",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]

@@ -1,0 +1,44 @@
+slug: aip
+display_name: AIP Family
+status: verified
+documentclass: article
+section_numbering: arabic
+section_depth: 3
+bibliography_style: mode
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: aip
+official_source: https://publishing.aip.org/resources/researchers/author-instructions/
+template_package_url: https://mirrors.ctan.org/macros/latex/contrib/revtex.zip
+checks:
+- id: class-file-and-journal-option
+  title: Class file and journal option
+  requirement: Confirm the manuscript uses the official REVTeX class with the correct AIP journal option and review format.
+  status: verified
+- id: frontmatter-and-author-block
+  title: Front matter and author block
+  requirement: Confirm title, authors, affiliations, abstract, and any AIP-specific metadata follow the official author instructions.
+  status: verified
+- id: section-flow-and-letter-constraints
+  title: Section flow and letter constraints
+  requirement: Confirm the article structure and any letter-format constraints match the target AIP journal guidance.
+  status: verified
+- id: figure-table-and-data-availability
+  title: Figure, table, and data availability rules
+  requirement: Confirm artwork preparation, table style, and data availability statements follow AIP guidance.
+  status: verified
+- id: references-and-revtex-style
+  title: References and REVTeX style
+  requirement: Confirm the reference style and REVTeX bibliography handling remain consistent with AIP instructions.
+  status: verified
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Use this family baseline only when the exact AIP target journal has not yet been fixed; once the venue is known,
+    tighten the manuscript against that journal's live AIP guidance.
+  status: verified
+

@@ -1,0 +1,42 @@
+# IEEE TGRS — 格式规范与校验规则
+# 继承 IEEE Family (families/ieee/) 基线
+# 覆盖: 期刊特定规则 + TGRS 专属 checklist
+
+slug: ieee-transactions-on-geoscience-and-remote-sensing
+display_name: IEEE Transactions on Geoscience and Remote Sensing
+family: ieee
+status: verified
+
+# ── TGRS 专属覆盖 ──────────────────────────────────────────
+journal_header: "IEEE Transactions on Geoscience and Remote Sensing"
+journal_header_short: "TGRS"
+template_dir: "tgrs"
+template_package_url: "https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip"
+official_source: "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/"
+
+# ── TGRS 专属校验规则 ──────────────────────────────────────
+# 继承 IEEE Family 所有自动校验规则 + 以下补充
+validation_rules:
+  automated:
+    - id: "tgrs-journal-header"
+      description: "TGRS 要求正确的期刊头部 \\markboth"
+      pattern: "\\\\markboth\\{IEEE Transactions on Geoscience and Remote Sensing"
+      severity: "warning"
+
+  manual_checks:
+    - id: "figure-table-graphics"
+      title: "图/表/图形规则"
+      items:
+        - "确认图题 (caption) 在图片下方"
+        - "确认表题 (caption) 在表格上方"
+        - "确认单栏宽度: 0.45\\textwidth（标准）或全宽 \\textwidth（跨栏）"
+        - "确认图片格式为 PDF/PNG（TGRS 接受 TIFF 但 pdflatex 不支持）"
+        - "确认补充材料/数据声明"
+
+    - id: "journal-specific-note"
+      title: "TGRS 期刊特定要求"
+      items:
+        - "确认遥感/地球观测主题一致性"
+        - "确认技术摘要和专业术语"
+        - "确认性能表格和遥感图像展示"
+        - "确认数据和代码可用性声明（如适用）"

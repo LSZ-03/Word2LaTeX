@@ -1,0 +1,35 @@
+slug: applied-physics-letters
+display_name: Applied Physics Letters
+family: aip
+status: verified
+section_depth: 0
+journal_header: Applied Physics Letters
+official_source: https://publishing.aip.org/resources/researchers/author-instructions/
+template_package_url: https://mirrors.ctan.org/macros/latex/contrib/revtex.zip
+checks:
+- id: class-file-and-journal-option
+  title: Class file and journal option
+  requirement: Confirm the manuscript uses the official REVTeX class with the correct AIP journal option and review format.
+  status: checklist-required
+- id: frontmatter-and-author-block
+  title: Front matter and author block
+  requirement: Confirm title, authors, affiliations, abstract, and any AIP-specific metadata follow the official author instructions.
+  status: checklist-required
+- id: section-flow-and-letter-constraints
+  title: Section flow and letter constraints
+  requirement: Confirm the article structure and any letter-format constraints match the target AIP journal guidance.
+  status: checklist-required
+- id: figure-table-and-data-availability
+  title: Figure, table, and data availability rules
+  requirement: Confirm artwork preparation, table style, and data availability statements follow AIP guidance.
+  status: checklist-required
+- id: references-and-revtex-style
+  title: References and REVTeX style
+  requirement: Confirm the reference style and REVTeX bibliography handling remain consistent with AIP instructions.
+  status: checklist-required
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Verify APL letter-format constraints, rapid-communication expectations, and figure-density limits before calling
+    the layout submission-ready.
+  status: checklist-required
+

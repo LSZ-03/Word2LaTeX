@@ -1,0 +1,38 @@
+slug: ieee-transactions-on-pattern-analysis-and-machine-intelligence
+display_name: IEEE Transactions on Pattern Analysis and Machine Intelligence
+family: ieee
+status: verified
+section_depth: 0
+journal_header: IEEE Transactions on Pattern Analysis and Machine Intelligence
+official_source: https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/
+template_package_url: https://mirrors.ctan.org/macros/latex/contrib/IEEEtran.zip
+checks:
+- id: class-file-and-option-set
+  title: Exact class file and option set
+  requirement: Verify the actual class file, template package, or sample source used by the journal.
+  status: checklist-required
+- id: front-matter-structure
+  title: Front matter structure
+  requirement: Confirm abstract and Index Terms format, author metadata, first-footnote content, and any journal-specific
+    front-matter blocks.
+  status: checklist-required
+- id: body-structure-and-sections
+  title: Body structure and section flow
+  requirement: Confirm the article body follows the target journal's required section hierarchy, including whether Related
+    Work and Discussion should be merged or separated.
+  status: checklist-required
+- id: figure-table-and-graphics-rules
+  title: Figure, table, and graphics rules
+  requirement: Confirm caption placement, one-column versus two-column sizing, accepted graphics formats, and supplementary-material
+    handling.
+  status: checklist-required
+- id: references-and-end-matter
+  title: References and end matter
+  requirement: Confirm IEEE reference styling, acknowledgments, appendices, and whether author biographies are required for
+    the target journal.
+  status: checklist-required
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Verify review-policy mode, appendix handling, and computer-vision benchmark or artifact expectations.
+  status: checklist-required
+

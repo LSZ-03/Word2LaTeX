@@ -1,0 +1,47 @@
+slug: elsevier
+display_name: Elsevier Family
+status: verified
+documentclass: elsarticle
+section_numbering: arabic
+section_depth: 3
+bibliography_style: mode
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: elsevier
+official_source: https://www.elsevier.com/en-gb/researcher/author/policies-and-guidelines/latex-instructions
+template_package_url: https://assets.ctfassets.net/o78em1y1w4i4/4MpsJHO0MOJ2xZuwGTAbOZ/7bc64af36477c5d6cfce335a1f872363/elsarticle.zip
+checks:
+- id: class-file-and-template-variant
+  title: Class file and template variant
+  requirement: Confirm whether the target journal should use the elsarticle or CAS branch and which official sample is the
+    closest baseline.
+  status: verified
+- id: frontmatter-and-keywords
+  title: Frontmatter and keywords
+  requirement: Confirm title page, affiliations, abstract, keywords, and any journal-specific metadata required by the target
+    Guide for Authors.
+  status: verified
+- id: reference-style-alignment
+  title: Reference style alignment
+  requirement: Confirm whether the target journal expects numeric or author-year citations and keep the selected Elsevier
+    sample consistent with that guidance.
+  status: verified
+- id: highlights-and-declarations
+  title: Highlights and declarations
+  requirement: Confirm whether highlights, graphical abstract, declaration sections, data statements, or biographies are required,
+    optional, or disallowed.
+  status: verified
+- id: figure-table-and-submission-assets
+  title: Figure, table, and submission assets
+  requirement: Confirm artwork format, table handling, supplementary files, and upload constraints for source submission.
+  status: verified
+caption_policy:
+  figure_position: below
+  table_position: below
+float_policy:
+  strategy: strict_stream

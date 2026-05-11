@@ -1,0 +1,47 @@
+slug: acm
+display_name: ACM Family
+status: verified
+documentclass: article
+section_numbering: arabic
+section_depth: 3
+bibliography_style: mode
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: acm
+official_source: https://www.acm.org/publications/authors/submissions-top
+template_package_url: https://mirrors.ctan.org/macros/latex/contrib/acmart.zip
+checks:
+- id: class-file-and-submission-mode
+  title: Class file and submission mode
+  requirement: Confirm the manuscript uses the official ACM acmart class and the review-oriented submission mode required
+    by ACM.
+  status: verified
+- id: frontmatter-and-acm-metadata
+  title: Front matter and ACM metadata
+  requirement: Confirm title, abstract, CCS concepts, keywords, authors, affiliations, and ACM-specific metadata match the
+    official authoring guidance.
+  status: verified
+- id: section-flow-and-length
+  title: Section flow and manuscript length
+  requirement: Confirm the section hierarchy and overall manuscript length match the target ACM journal's expectations.
+  status: verified
+- id: figure-table-and-accessibility-rules
+  title: Figure, table, and accessibility rules
+  requirement: Confirm figure and table treatment, caption style, and accessibility requirements such as figure descriptions
+    follow ACM guidance.
+  status: verified
+- id: references-and-bibliography-mode
+  title: References and bibliography mode
+  requirement: Confirm the citation and bibliography mode matches the official ACM journal workflow and the target venue requirements.
+  status: verified
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Use this family baseline only when the exact ACM target journal has not yet been fixed; once the venue is known,
+    tighten the manuscript against that journal's live ACM guidance.
+  status: verified
+

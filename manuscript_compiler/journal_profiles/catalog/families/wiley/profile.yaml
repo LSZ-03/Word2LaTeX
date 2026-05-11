@@ -1,0 +1,47 @@
+slug: wiley
+display_name: Wiley Family
+status: verified
+documentclass: article
+section_numbering: arabic
+section_depth: 3
+bibliography_style: mode
+bibliography_type: thebibliography
+figure_placement: tbp
+figure_max_width: 0.9\columnwidth
+table_placement: tbp
+table_default_align: c
+table_style: booktabs
+caption_style: bf
+template_dir: wiley
+official_source: https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html
+template_package_url: https://authors.wiley.com/asset/WileyDesign.zip
+checks:
+- id: class-file-and-template-mode
+  title: Class file and template mode
+  requirement: Confirm the manuscript uses the imported official Wiley USG class and the selected template mode consistent
+    with the Wiley PDF design package.
+  status: verified
+- id: frontmatter-and-wiley-metadata
+  title: Front matter and Wiley metadata
+  requirement: Confirm title, authors, correspondence, abstract, keywords, and publisher metadata follow the Wiley authoring
+    guidance.
+  status: verified
+- id: section-flow-and-journal-rules
+  title: Section flow and journal rules
+  requirement: Confirm the manuscript section hierarchy and journal-level expectations match the target Wiley guide.
+  status: verified
+- id: figure-table-and-graphics-rules
+  title: Figure, table, and graphics rules
+  requirement: Confirm figure handling, table style, and graphics preparation remain consistent with the Wiley authoring package
+    and the target journal guidance.
+  status: verified
+- id: references-and-bibliography-style
+  title: References and bibliography style
+  requirement: Confirm the selected Wiley bibliography mode matches the target journal guidance.
+  status: verified
+- id: journal-specific-note
+  title: Journal-specific note
+  requirement: Use this family baseline only when the exact Wiley target journal has not yet been fixed; once the venue is
+    known, tighten the manuscript against that journal's live Wiley guidance.
+  status: verified
+
