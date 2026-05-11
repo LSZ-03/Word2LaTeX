@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="'Segoe UI', 'SF Pro Display', -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="docx-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2b5797" />
+      <stop offset="100%" style="stop-color:#1a3a6b" />
+    </linearGradient>
+    <linearGradient id="ast-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed" />
+      <stop offset="100%" style="stop-color:#5b21b6" />
+    </linearGradient>
+    <linearGradient id="constraint-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b" />
+      <stop offset="100%" style="stop-color:#d97706" />
+    </linearGradient>
+    <linearGradient id="render-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981" />
+      <stop offset="100%" style="stop-color:#059669" />
+    </linearGradient>
+    <linearGradient id="tex-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4" />
+      <stop offset="100%" style="stop-color:#0891b2" />
+    </linearGradient>
+    <linearGradient id="profile-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f43f5e" />
+      <stop offset="100%" style="stop-color:#be123c" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.03">
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="500" y1="0" x2="500" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="800" y1="0" x2="800" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="900" y1="0" x2="900" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="1000" y1="0" x2="1000" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="1100" y1="0" x2="1100" y2="630" stroke="#fff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="55" text-anchor="middle" fill="#fff" font-size="28" font-weight="700" filter="url(#glow)">Word2PaperAI</text>
+  <text x="600" y="80" text-anchor="middle" fill="#94a3b8" font-size="14" font-weight="400">Word (.docx) → Journal-Specific LaTeX Conversion Pipeline</text>
+
+  <!-- Pipeline flow arrow -->
+  <!-- Stage 1: Parser -->
+  <rect x="50" y="140" width="180" height="70" rx="12" fill="url(#docx-grad)" filter="url(#shadow)"/>
+  <text x="140" y="167" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" filter="url(#glow)">📄 Parser</text>
+  <text x="140" y="185" text-anchor="middle" fill="#93c5fd" font-size="10">docx_parser/agent.py</text>
+  <text x="140" y="200" text-anchor="middle" fill="#bfdbfe" font-size="9">Section extraction</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="230" y1="175" x2="290" y2="175" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrow-purple)"/>
+  <defs><marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7c3aed"/></marker></defs>
+
+  <!-- Stage 2: AST -->
+  <rect x="300" y="140" width="180" height="70" rx="12" fill="url(#ast-grad)" filter="url(#shadow)"/>
+  <text x="390" y="167" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" filter="url(#glow)">📊 Semantic AST</text>
+  <text x="390" y="185" text-anchor="middle" fill="#c4b5fd" font-size="10">manuscript_compiler/ast/</text>
+  <text x="390" y="200" text-anchor="middle" fill="#ddd6fe" font-size="9">Figure · Table · Equation</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="480" y1="175" x2="540" y2="175" stroke="#f59e0b" stroke-width="2"/>
+  <defs><marker id="arrow-yellow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/></marker></defs>
+
+  <!-- Stage 3: Constraint Layer -->
+  <rect x="550" y="140" width="200" height="70" rx="12" fill="url(#constraint-grad)" filter="url(#shadow)"/>
+  <text x="650" y="167" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" filter="url(#glow)">⚙️ Constraint Layer</text>
+  <text x="650" y="185" text-anchor="middle" fill="#fde68a" font-size="10">constraints/engine.py</text>
+  <text x="650" y="200" text-anchor="middle" fill="#fef3c7" font-size="9">Citation · Label · Anchor</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="750" y1="175" x2="810" y2="175" stroke="#10b981" stroke-width="2"/>
+  <defs><marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/></marker></defs>
+
+  <!-- Stage 4: Renderer -->
+  <rect x="820" y="140" width="180" height="70" rx="12" fill="url(#render-grad)" filter="url(#shadow)"/>
+  <text x="910" y="167" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" filter="url(#glow)">🎨 Renderer</text>
+  <text x="910" y="185" text-anchor="middle" fill="#a7f3d0" font-size="10">renderer/agent.py</text>
+  <text x="910" y="200" text-anchor="middle" fill="#d1fae5" font-size="9">Section · Figure · Table</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="1000" y1="175" x2="1060" y2="175" stroke="#06b6d4" stroke-width="2"/>
+  <defs><marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#06b6d4"/></marker></defs>
+
+  <!-- Stage 5: Output -->
+  <rect x="1070" y="140" width="110" height="70" rx="12" fill="url(#tex-grad)" filter="url(#shadow)"/>
+  <text x="1125" y="167" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" filter="url(#glow)">📝 LaTeX</text>
+  <text x="1125" y="185" text-anchor="middle" fill="#a5f3fc" font-size="10">main.tex</text>
+  <text x="1125" y="200" text-anchor="middle" fill="#cffafe" font-size="9">refs.bib</text>
+
+  <!-- Bottom section: journal profiles -->
+  <rect x="50" y="260" width="1130" height="140" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" filter="url(#shadow)"/>
+  <text x="615" y="288" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">📚 Journal Configuration Catalogue</text>
+  <text x="615" y="305" text-anchor="middle" fill="#64748b" font-size="11">28 publishing families · 87 journal profiles · YAML-driven · Family inheritance</text>
+
+  <!-- Family boxes -->
+  <g font-size="11" text-anchor="middle">
+    <rect x="80" y="318" width="95" height="32" rx="8" fill="#1e3a5f"/>
+    <text x="127" y="339" fill="#93c5fd" font-weight="600">IEEE</text>
+
+    <rect x="195" y="318" width="95" height="32" rx="8" fill="#3b1f4e"/>
+    <text x="242" y="339" fill="#c4b5fd" font-weight="600">Elsevier</text>
+
+    <rect x="310" y="318" width="95" height="32" rx="8" fill="#1e3b2d"/>
+    <text x="357" y="339" fill="#6ee7b7" font-weight="600">Springer</text>
+
+    <rect x="425" y="318" width="95" height="32" rx="8" fill="#3b2a1e"/>
+    <text x="472" y="339" fill="#fcd34d" font-weight="600">MDPI</text>
+
+    <rect x="540" y="318" width="95" height="32" rx="8" fill="#3b1f2d"/>
+    <text x="587" y="339" fill="#f9a8d4" font-weight="600">Nature</text>
+
+    <rect x="655" y="318" width="95" height="32" rx="8" fill="#1e2e3b"/>
+    <text x="702" y="339" fill="#67e8f9" font-weight="600">ACM</text>
+
+    <rect x="770" y="318" width="95" height="32" rx="8" fill="#2e2e1e"/>
+    <text x="817" y="339" fill="#bef264" font-weight="600">Wiley</text>
+
+    <rect x="885" y="318" width="95" height="32" rx="8" fill="#2e1e2e"/>
+    <text x="932" y="339" fill="#d8b4fe" font-weight="600">PLOS</text>
+
+    <rect x="1000" y="318" width="95" height="32" rx="8" fill="#1e2e2e"/>
+    <text x="1047" y="339" fill="#5eead4" font-weight="600">SAGE</text>
+  </g>
+
+  <!-- Subtitle under catalog -->
+  <text x="615" y="380" text-anchor="middle" fill="#475569" font-size="10">Each family has baseline config (documentclass, packages, validation rules) → journals inherit &amp; override</text>
+
+  <!-- Features section -->
+  <rect x="50" y="430" width="365" height="165" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" filter="url(#shadow)"/>
+  <text x="232" y="458" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600">🔧 Core Capabilities</text>
+  <circle cx="80" cy="482" r="4" fill="#10b981"/>
+  <text x="94" y="487" fill="#cbd5e1" font-size="11">MathType WMF formula extraction → Doubao OCR → LaTeX</text>
+  <circle cx="80" cy="505" r="4" fill="#10b981"/>
+  <text x="94" y="510" fill="#cbd5e1" font-size="11">Word-style citation [1-5] → LaTeX \cite{ref_1,...}</text>
+  <circle cx="80" cy="528" r="4" fill="#10b981"/>
+  <text x="94" y="533" fill="#cbd5e1" font-size="11">Inline figure/table streaming placement (no end-stack)</text>
+  <circle cx="80" cy="551" r="4" fill="#10b981"/>
+  <text x="94" y="556" fill="#cbd5e1" font-size="11">Automated 15-point format compliance validation</text>
+  <circle cx="80" cy="574" r="4" fill="#10b981"/>
+  <text x="94" y="579" fill="#cbd5e1" font-size="11">Table Note/Abbreviation binding, equation number binding</text>
+
+  <!-- Pipeline stats -->
+  <rect x="440" y="430" width="315" height="165" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" filter="url(#shadow)"/>
+  <text x="597" y="458" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600">📊 Pipeline Stats</text>
+  <text x="465" y="487" fill="#94a3b8" font-size="11">Parser Stage</text>
+  <rect x="540" y="475" width="200" height="6" rx="3" fill="#334155"/>
+  <rect x="540" y="475" width="200" height="6" rx="3" fill="#7c3aed"/>
+  <text x="745" y="487" fill="#a78bfa" font-size="10" text-anchor="end">100%</text>
+
+  <text x="465" y="512" fill="#94a3b8" font-size="11">Constraint Layer</text>
+  <rect x="540" y="500" width="200" height="6" rx="3" fill="#334155"/>
+  <rect x="540" y="500" width="160" height="6" rx="3" fill="#f59e0b"/>
+  <text x="745" y="512" fill="#fcd34d" font-size="10" text-anchor="end">80%</text>
+
+  <text x="465" y="537" fill="#94a3b8" font-size="11">Renderer</text>
+  <rect x="540" y="525" width="200" height="6" rx="3" fill="#334155"/>
+  <rect x="540" y="525" width="200" height="6" rx="3" fill="#10b981"/>
+  <text x="745" y="537" fill="#6ee7b7" font-size="10" text-anchor="end">100%</text>
+
+  <text x="465" y="562" fill="#94a3b8" font-size="11">Journal Profiles</text>
+  <rect x="540" y="550" width="200" height="6" rx="3" fill="#334155"/>
+  <rect x="540" y="550" width="190" height="6" rx="3" fill="#f43f5e"/>
+  <text x="745" y="562" fill="#fb7185" font-size="10" text-anchor="end">90%</text>
+
+  <text x="465" y="587" fill="#94a3b8" font-size="11">Portability</text>
+  <rect x="540" y="575" width="200" height="6" rx="3" fill="#334155"/>
+  <rect x="540" y="575" width="100" height="6" rx="3" fill="#f59e0b"/>
+  <text x="745" y="587" fill="#fcd34d" font-size="10" text-anchor="end">50%</text>
+
+  <!-- Quick start -->
+  <rect x="780" y="430" width="400" height="165" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" filter="url(#shadow)"/>
+  <text x="980" y="458" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="600">🚀 Quick Start</text>
+
+  <rect x="800" y="472" width="360" height="18" rx="4" fill="#0f172a"/>
+  <text x="810" y="486" fill="#e2e8f0" font-size="10" font-family="'Consolas', 'Courier New', monospace">pip install python-docx jinja2 pyyaml</text>
+
+  <rect x="800" y="496" width="360" height="42" rx="4" fill="#0f172a"/>
+  <text x="810" y="510" fill="#a7f3d0" font-size="10" font-family="'Consolas', 'Courier New', monospace">python scripts/run_pipeline.py paper.docx \</text>
+  <text x="810" y="526" fill="#a7f3d0" font-size="10" font-family="'Consolas', 'Courier New', monospace">   -j tgrs -o output/</text>
+
+  <text x="810" y="553" fill="#94a3b8" font-size="10">Then open <tspan fill="#fcd34d">output/main.tex</tspan> in Overleaf or local LaTeX</text>
+  <text x="810" y="573" fill="#94a3b8" font-size="10">Available journal targets: <tspan fill="#67e8f9">-j tgrs | ieee | iclr | remote-sensing | ...</tspan></text>
+</svg>
