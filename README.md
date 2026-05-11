@@ -2,6 +2,13 @@
   <img src="docs/architecture.svg" alt="Word2PaperAI Architecture" width="100%">
 </p>
 
+<div align="center">
+
+[![EN](https://img.shields.io/badge/LANG-English-blue?style=flat-square)](README.md)
+[![ZH](https://img.shields.io/badge/LANG-简体中文-red?style=flat-square)](README.zh.md)
+
+</div>
+
 <h1 align="center">Word2PaperAI</h1>
 <p align="center">
   <strong>Word (.docx) → Journal-Specific LaTeX Converter</strong>
@@ -17,6 +24,10 @@
   <img src="https://img.shields.io/badge/journals-115%20(28%20families)-orange?style=flat-square" alt="115 Journals">
   <img src="https://img.shields.io/badge/license-MIT-purple?style=flat-square" alt="MIT License">
 </p>
+
+---
+
+> **🇨🇳 中文版请见 [README.zh.md](README.zh.md)**
 
 ---
 
@@ -208,10 +219,10 @@ The **Constraint Layer architecture** decouples journal-specific formatting rule
 ## 🔧 Known Limitations
 
 - **Equation position**: Equations are placed at the end of their containing paragraph (placeholder `\x00EQ\x00` is appended, not inserted at the exact document position). Full inline paragraph insertion is tracked as a TODO.
-- **Cross-journal portability**: The title block (`_render_ieee_title_block`) is IEEE-specific. Switching to Elsevier/Springer/Nature requires a generic title block system. See [Portability Assessment](#).
+- **Cross-journal portability**: The title block (`_render_ieee_title_block`) is IEEE-specific. Switching to Elsevier/Springer/Nature requires a generic title block system.
 - **Formula recognition**: Requires Doubao Vision API (WMF→PNG→OCR). Falls back gracefully to image placeholders if the API is unavailable.
 - **Author parsing**: Currently uses placeholder "Author Names" — no author extraction from Word metadata yet.
-- **Overleaf compilation**: The output has been thoroughly tested with `IEEEtran.cls`. PDLaTeX dependency is required.
+- **Overleaf compilation**: The output has been thoroughly tested with `IEEEtran.cls`. pdflatex dependency is required.
 
 ---
 
