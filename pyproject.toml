@@ -1,7 +1,7 @@
 [project]
-name = "word2paperai"
+name = "word2latex"
 version = "0.1.0"
-description = "Word Manuscript to LaTeX Compiler"
+description = "Word (.docx) to Journal-Specific LaTeX Converter"
 requires-python = ">=3.10"
 dependencies = [
     "python-docx",

@@ -1,4 +1,4 @@
-"""Word2PaperAI — Command-line entry point."""
+"""Word2LaTeX — Command-line entry point."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from manuscript_compiler.pipelines.full_pipeline import run_pipeline
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Word2PaperAI — Convert Word manuscripts to LaTeX",
+        description="Word2LaTeX — Convert Word manuscripts to LaTeX",
     )
     parser.add_argument("input", help="Path to input .docx file")
     parser.add_argument("-o", "--output-dir", help="Output directory (default: auto)")

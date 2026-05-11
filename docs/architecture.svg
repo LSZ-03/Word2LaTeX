@@ -60,7 +60,7 @@
   </g>
 
   <!-- Title -->
-  <text x="600" y="55" text-anchor="middle" fill="#fff" font-size="28" font-weight="700" filter="url(#glow)">Word2PaperAI</text>
+  <text x="600" y="55" text-anchor="middle" fill="#fff" font-size="28" font-weight="700" filter="url(#glow)">Word2LaTeX</text>
   <text x="600" y="80" text-anchor="middle" fill="#94a3b8" font-size="14" font-weight="400">Word (.docx) → Journal-Specific LaTeX Conversion Pipeline</text>
 
   <!-- Pipeline flow arrow -->

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/architecture.svg" alt="Word2PaperAI Architecture" width="100%">
+  <img src="docs/architecture.svg" alt="Word2LaTeX Architecture" width="100%">
 </p>
 
 <div align="center">
@@ -9,7 +9,7 @@
 
 </div>
 
-<h1 align="center">Word2PaperAI</h1>
+<h1 align="center">Word2LaTeX</h1>
 <p align="center">
   <strong>Word (.docx) → Journal-Specific LaTeX Converter</strong>
 </p>
@@ -33,7 +33,7 @@
 
 ## 📋 Overview
 
-Word2PaperAI takes a Word manuscript (`.docx`) and transforms it into a journal-compliant LaTeX project. It handles:
+Word2LaTeX takes a Word manuscript (`.docx`) and transforms it into a journal-compliant LaTeX project. It handles:
 
 - **Structure extraction** — Sections, headings, paragraphs, lists
 - **Math formula recognition** — MathType/WMF formulas via Doubao Vision API → LaTeX
@@ -143,7 +143,7 @@ This extracts full reference texts from the original docx, searches Semantic Sch
 ## 📁 Project Structure
 
 ```
-Word2PaperAI/
+Word2LaTeX/
 ├── scripts/
 │   └── run_pipeline.py              # CLI entry point
 ├── manuscript_compiler/
@@ -197,7 +197,7 @@ Word2PaperAI/
 
 ## 📚 Journal Support
 
-Word2PaperAI includes 115 journal profiles organized by 28 publishing families:
+Word2LaTeX includes 115 journal profiles organized by 28 publishing families:
 
 | Family | # Journals | Status |
 |--------|-----------|--------|

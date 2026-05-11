@@ -63,7 +63,7 @@ def main(output_dir):
         query = title_q.group(1) if title_q else text[:100]
         url = 'https://api.semanticscholar.org/graph/v1/paper/search?query=' + urllib.parse.quote(query) + '&limit=3&fields=title,externalIds'
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Word2PaperAI/1.0'}), timeout=15) as resp:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Word2LaTeX/1.0'}), timeout=15) as resp:
                 data = json.loads(resp.read().decode('utf-8'))
             return data.get('data', [])
         except: return []
@@ -72,7 +72,7 @@ def main(output_dir):
         for attempt in range(3):
             try:
                 req = urllib.request.Request('https://doi.org/' + doi,
-                    headers={'Accept': 'application/x-bibtex', 'User-Agent': 'Word2PaperAI/1.0'})
+                    headers={'Accept': 'application/x-bibtex', 'User-Agent': 'Word2LaTeX/1.0'})
                 with urllib.request.urlopen(req, timeout=15) as resp:
                     return resp.read().decode('utf-8')
             except:

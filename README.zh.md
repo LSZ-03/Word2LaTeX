@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/architecture.svg" alt="Word2PaperAI 架构图" width="100%">
+  <img src="docs/architecture.svg" alt="Word2LaTeX 架构图" width="100%">
 </p>
 
 <div align="center">
@@ -9,7 +9,7 @@
 
 </div>
 
-<h1 align="center">Word2PaperAI</h1>
+<h1 align="center">Word2LaTeX</h1>
 <p align="center">
   <strong>Word (.docx) → 期刊投稿专用 LaTeX 转换器</strong>
 </p>
@@ -33,7 +33,7 @@
 
 ## 📋 项目概述
 
-Word2PaperAI 将 Word 投稿稿件（`.docx`）自动转换为符合目标期刊格式的 LaTeX 项目。主要功能包括：
+Word2LaTeX 将 Word 投稿稿件（`.docx`）自动转换为符合目标期刊格式的 LaTeX 项目。主要功能包括：
 
 - **结构提取** — 章节、标题、段落、列表
 - **数学公式识别** — MathType/WMF 公式通过豆包 Vision API 转为 LaTeX
@@ -145,7 +145,7 @@ python manuscript_compiler/scripts/apply_bib.py output/
 ## 📁 项目结构
 
 ```
-Word2PaperAI/
+Word2LaTeX/
 ├── scripts/
 │   └── run_pipeline.py              # 命令行入口
 ├── manuscript_compiler/
@@ -199,7 +199,7 @@ Word2PaperAI/
 
 ## 📚 期刊支持
 
-Word2PaperAI 包含 115 种期刊配置，按 28 个出版家族组织：
+Word2LaTeX 包含 115 种期刊配置，按 28 个出版家族组织：
 
 | 出版家族 | 期刊数 | 状态 |
 |---------|--------|------|

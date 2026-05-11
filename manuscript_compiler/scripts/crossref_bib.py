@@ -1,4 +1,4 @@
-"""Batch CrossRef BibTeX search for Word2PaperAI pipeline.
+"""Batch CrossRef BibTeX search for Word2LaTeX pipeline.
 
 Extracts reference titles from the manuscript, searches Crossref for DOIs,
 fetches BibTeX entries, and generates refs.bib.
@@ -26,7 +26,7 @@ def search_crossref_by_title(title: str, max_retries: int = 3) -> Optional[str]:
     
     for attempt in range(max_retries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "Word2PaperAI/1.0"})
+            req = urllib.request.Request(url, headers={"User-Agent": "Word2LaTeX/1.0"})
             with urllib.request.urlopen(req, timeout=15) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
             items = data.get("message", {}).get("items", [])
@@ -49,7 +49,7 @@ def fetch_bibtex(doi: str, max_retries: int = 3) -> Optional[str]:
         try:
             req = urllib.request.Request(url, headers={
                 "Accept": "application/x-bibtex",
-                "User-Agent": "Word2PaperAI/1.0",
+                "User-Agent": "Word2LaTeX/1.0",
             })
             with urllib.request.urlopen(req, timeout=15) as resp:
                 return resp.read().decode("utf-8")

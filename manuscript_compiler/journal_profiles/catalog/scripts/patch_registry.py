@@ -1,7 +1,7 @@
 """Patch registry.py — add house_style, validation_rules, manual_checks parsing."""
 from pathlib import Path
 
-path = Path("/home/zls/workspace/Word2PaperAI/manuscript_compiler/journal_profiles/registry.py")
+path = Path("/home/zls/workspace/Word2LaTeX/manuscript_compiler/journal_profiles/registry.py")
 content = path.read_text()
 
 # 1. Fix the return statement in _yaml_to_profile
