@@ -44,6 +44,9 @@ Thumbs.db
 tests/*_output*/
 tests/*_media*/
 
+# Test outputs with paper content
+tests/
+
 # Temp files
 /tmp/
 *.zip
