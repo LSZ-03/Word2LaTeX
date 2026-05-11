@@ -1,32 +1,8 @@
 <p align="center">
-  <img src="docs/preview_advantage.png" alt="当前优势" width="100%">
+  <img src="docs/preview_advantage.png" alt="✅ 当前优势" width="32%">
+  <img src="docs/formula_limitation.png" alt="⚠️ 公式待优化" width="32%">
+  <img src="docs/table_limitation.png" alt="⚠️ 表格待优化" width="32%">
 </p>
-
-<p align="center">
-  <em>✅ 当前优势 — 可预览，输出质量高</em>
-</p>
-
-<br>
-
-<p align="center">
-  <img src="docs/formula_limitation.png" alt="公式识别待优化" width="100%">
-</p>
-
-<p align="center">
-  <em>⚠️ 待优化 — 公式识别仍有改进空间</em>
-</p>
-
-<br>
-
-<p align="center">
-  <img src="docs/table_limitation.png" alt="表格布局待优化" width="100%">
-</p>
-
-<p align="center">
-  <em>⚠️ 待优化 — 表格自适应布局需优化</em>
-</p>
-
-<br>
 
 <div align="center">
 
