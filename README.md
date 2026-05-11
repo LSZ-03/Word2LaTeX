@@ -246,6 +246,12 @@ MIT License — see LICENSE file for details.
 
 ---
 
+## 🙏 Acknowledgements
+
+Our LaTeX journal configuration system (28 publishing families, 115+ journal profiles) is inspired by and references the excellent [**JournalManuscript**](https://github.com/amine123max/JournalManuscript) project by amine123max. We respect the original author's work and thank them for their contributions to the academic publishing community.
+
+---
+
 <p align="center">
   <sub>Built with ❤️ for researchers tired of manual Word → LaTeX conversion</sub>
 </p>

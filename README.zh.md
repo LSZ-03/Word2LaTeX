@@ -248,6 +248,12 @@ MIT License — 详见 LICENSE 文件。
 
 ---
 
+## 🙏 致谢
+
+我们的 LaTeX 期刊配置系统（28 个出版家族、115+ 种期刊配置）参考了 [**JournalManuscript**](https://github.com/amine123max/JournalManuscript) 项目（作者：amine123max）的优秀设计。我们尊重原作者的工作，感谢他们对学术出版社区的贡献。
+
+---
+
 <p align="center">
   <sub>💪 为厌烦手动 Word → LaTeX 转换的科研人员打造</sub>
 </p>
