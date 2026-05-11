@@ -58,47 +58,14 @@ Word2LaTeX takes a Word manuscript (`.docx`) and transforms it into a journal-co
 
 ## ✨ Features
 
-### Content Extraction
-| Capability | Status |
-|------------|--------|
-| Section tree with heading hierarchy | ✅ Complete |
-| Figure extraction + caption binding | ✅ Complete |
-| Table extraction + caption/note binding | ✅ Complete |
-| MathType WMF formula extraction | ✅ Complete |
-| Formula LaTeX recognition (Doubao Vision API) | ✅ Complete |
-| Bibliography reference extraction | ✅ Complete |
-
-### Formatting & Conversion
-| Capability | Status |
-|------------|--------|
-| Citation: `[1-5]` → `\cite{ref_1,...}` | ✅ Complete |
-| Figure/Table reference: `Fig. 3` → `Fig.~\ref{fig:3}` | ✅ Complete |
-| En-dash/em-dash citation compatibility | ✅ Complete |
-| Inline figure/table streaming placement | ✅ Complete |
-| Equation inline/display auto-classification (semantic rules) | ✅ Complete |
-| Equation number binding `(1)(2)` → parent display equation | ✅ Complete |
-| Table Note/Abbreviation binding | ✅ Complete |
-| IEEEtran double-column auto-classification | ✅ Complete |
-
-### Bibliography
-| Capability | Status |
-|------------|--------|
-| Semantic Scholar DOI search | ✅ Complete |
-| Crossref BibTeX retrieval | ✅ Complete |
-| Deduplication of BibTeX keys | ✅ Complete |
-| `\bibliography{refs}` with `\nocite{*}` | ✅ Complete |
-| Manual fixes for YOLOv3, MMDetection, KFIoU | ✅ Complete |
-
-### Journal Profiles
-| Capability | Status |
-|------------|--------|
-| Profile-driven documentclass/packages | ✅ 115 journals |
-| Family inheritance (IEEE → TGRS → sub-journals) | ✅ 28 families |
-| Float placement policy (near-reference, strict-stream, top-preferred) | ✅ Configurable |
-| Caption position policy (below/above) | ✅ Configurable |
-| Section numbering (arabic/none) | ✅ Configurable |
-| Format compliance validation (15 checks) | ⚠️ IEEE-specific |
-| **Cross-journal portability** | ⚠️ Needs refactoring |
+| Category | Capabilities |
+|----------|-------------|
+| **Content Extraction** | Sections, headings, figures, tables, equations (MathType WMF), bibliography |
+| **Formula Recognition** | WMF → Doubao Vision API → LaTeX, inline/display auto-classification |
+| **Citation Management** | `[1-5]` → `\cite{...}` → real BibTeX keys via Semantic Scholar/Crossref |
+| **Figure/Table Placement** | Streaming placement at first reference paragraph (no end-stack) |
+| **Journal Formatting** | 115 journal profiles (28 families) — document class, packages, placement, captions, validation |
+| **Cross-Reference** | Auto-convert "Fig. 3" → `Fig.~\ref{fig:3}`, "Table 1" → `Table~\ref{tab:1}` |
 
 ---
 
@@ -188,7 +155,6 @@ Word2LaTeX/
 │   ├── ieee/                        # IEEEtran templates
 │   └── tgrs/                        # IEEE TGRS templates
 ├── config/                          # Pipeline configuration YAML
-├── tests/                           # Test outputs
 └── docs/
     └── architecture.svg             # Architecture diagram
 ```
