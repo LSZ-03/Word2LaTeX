@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LaTeX output (too large, regenerated)
+*.aux
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.dvi
+*.ps
+
+# Large binary test files
+**/figures/*.png
+**/figures/*.tif
+**/figures/*.tiff
+**/figures/*.wmf
+**/figures/*.bin
+
+# Pipeline output directories
+英文稿_output*/
+tests/*_output*/
+tests/*_media*/
+
+# Temp files
+/tmp/
+*.zip
+*.tar.gz
+
+# Credentials
+.env
+*.key
