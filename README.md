@@ -235,8 +235,7 @@ This project is under active development. Contributions, issue reports, and feat
 Phase 1: Parser + Renderer + TGRS profile  ✅ Complete
 Phase 2: Multi-journal Constraint Layer      ✅ Complete (80%)
 Phase 3: Cross-journal portability           🔄 In Progress
-Phase 4: Author/affiliation parsing          📋 Planned
-Phase 5: Self-healing compilation pipeline   📋 Planned
+Phase 4: Self-healing compilation pipeline   📋 Planned
 ```
 
 ---
