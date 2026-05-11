@@ -221,7 +221,6 @@ The **Constraint Layer architecture** decouples journal-specific formatting rule
 - **Equation position**: Equations are placed at the end of their containing paragraph (placeholder `\x00EQ\x00` is appended, not inserted at the exact document position). Full inline paragraph insertion is tracked as a TODO.
 - **Cross-journal portability**: The title block (`_render_ieee_title_block`) is IEEE-specific. Switching to Elsevier/Springer/Nature requires a generic title block system.
 - **Formula recognition**: Requires Doubao Vision API (WMF→PNG→OCR). Falls back gracefully to image placeholders if the API is unavailable.
-- **Author parsing**: Currently uses placeholder "Author Names" — no author extraction from Word metadata yet.
 - **Overleaf compilation**: The output has been thoroughly tested with `IEEEtran.cls`. pdflatex dependency is required.
 
 ---

@@ -223,7 +223,6 @@ Word2PaperAI 包含 115 种期刊配置，按 28 个出版家族组织：
 - **公式位置**：公式当前放置在所在段落的末尾（占位符 `\x00EQ\x00` 追加到段尾，而非精确插入到文档原始位置）。精确的段内插入有待实现。
 - **跨期刊可移植性**：标题块渲染（`_render_ieee_title_block`）为 IEEE 专用。切换到 Elsevier/Springer/Nature 需要通用的标题块系统。
 - **公式识别**：需要豆包 Vision API（WMF→PNG→OCR）。当 API 不可用时，会优雅地回退到图片占位符。
-- **作者解析**：目前使用占位符 "Author Names" —— 尚未从 Word 元数据中提取作者信息。
 - **Overleaf 编译**：输出已通过 `IEEEtran.cls` 大量测试。需要 pdflatex 环境。
 
 ---
