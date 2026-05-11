@@ -1,6 +1,32 @@
 <p align="center">
-  <img src="docs/architecture.svg" alt="Word2LaTeX Architecture" width="100%">
+  <img src="docs/preview_advantage.png" alt="Current Advantage" width="100%">
 </p>
+
+<p align="center">
+  <em>✅ 当前优势 — 可预览，输出质量高（Current advantage — previewable, high-quality output）</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="docs/formula_limitation.png" alt="Formula Limitation" width="100%">
+</p>
+
+<p align="center">
+  <em>⚠️ 待优化 — 公式识别仍有改进空间（To improve — formula recognition accuracy）</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="docs/table_limitation.png" alt="Table Limitation" width="100%">
+</p>
+
+<p align="center">
+  <em>⚠️ 待优化 — 表格自适应布局需优化（To improve — table layout adaptation）</em>
+</p>
+
+<br>
 
 <div align="center">
 
